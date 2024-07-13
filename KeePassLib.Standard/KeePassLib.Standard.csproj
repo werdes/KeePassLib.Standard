@@ -4,18 +4,28 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>disable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>KeePassLib for .NET-Standard 2.1</Title>
+    <Version>2.57.1</Version>
+    <Authors>Dominik Reichl, Werdes</Authors>
+    <Description>Unofficial adaption of KeePassLib (keepass.info) for .NET-Standard 2.1</Description>
+    <PackageProjectUrl>https://github.com/werdes/KeePassLib.Standard</PackageProjectUrl>
+    <Copyright>Dominik Reichl</Copyright>
+    <RepositoryUrl>https://github.com/werdes/KeePassLib.Standard</RepositoryUrl>
+    <PackageTags>keepass</PackageTags>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <Company />
+    <PackageLicenseExpression> GPL-2.0-or-later</PackageLicenseExpression>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
     <Deterministic>False</Deterministic>
-    <DefineConstants>$(DefineConstants);NETCOREAPP</DefineConstants>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
     <Deterministic>False</Deterministic>
-    <DefineConstants>$(DefineConstants);NETCOREAPP</DefineConstants>
   </PropertyGroup>
 
   <ItemGroup>
